@@ -4,4 +4,4 @@ Auth:
 
 
 SAST:
-  language: "python"
+  language: "python-snyk"
