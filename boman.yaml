@@ -1,7 +1,7 @@
 Auth:
-  project_token: "2b7b132e-3353-426e-a1bb-d10ac8ec1259"
-  customer_token:  "4941f85a-5453-4f94-9247-d5565b4bd116"
+  project_token: "909e2248-1f4b-48e8-9f95-153e1b24a6da"
+  customer_token:  "a17845a1-056c-44c3-855f-9fd224de1d88"
 
 
 SAST:
-  language: "python-snyk"
+  language: "python"
