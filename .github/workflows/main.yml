@@ -1,3 +1,6 @@
+# This is a basic workflow to help you get started with boman.ai
+
+name: Bomanai Scanner
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
 #  push:
@@ -19,18 +22,6 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install packages
-        run: sudo pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==15.2.11
-        #sudo pip install boman-cli
+        run: sudo pip install boman-cli
       - name: Run scan  
-        run: sudo boman-cli-uat -a run -u https://qa.boman.ai -at b9e594f7-f355-4c38-8503-3b7100064855 -ct 5b2f4dbd-a873-4042-8441-ff38fef71ed5
-        
-        #sudo boman-cli -a run -u https://dashboard.boman.ai/ -at ${{secrets.BOMAN_APP_TOKEN}} -ct ${{secrets.BOMAN_CUSTOMER_TOKEN}}
-
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: my-artifacts
-          path: |
-            boman_zap_auth_plan.yaml
-            session_management.js
-          retention-days: 5
+        run: sudo boman-cli -a run -at 6a3662c5-3a4b-4911-b8c9-3e5a5eed109d -ct ad752d56-f8e8-4b3c-a70a-d35abaee21b3
